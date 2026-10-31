@@ -15,10 +15,12 @@
   },
   "keywords": [
     "dsh",
+    "dsh-plugin",
     "deepseek-harness",
     "plugin",
     "cookie",
-    "electron"
+    "electron",
+    "windows"
   ],
   "exports": {
     ".": "./index.js",
