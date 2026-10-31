@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cookie Sweep",
+    "description": "Deletes the leftover DSH desktop login-cookie database on every startup, so cookies can never pile up to the 16KB request-header limit and break the Web UI with a 431."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "dsh-cookie-sweep",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Sweep the leftover DSH desktop login-cookie files on every start, so they cannot pile up past the 16KB request-header limit and break the Web UI with a 431.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALingStudio/dsh-cookie-sweep.git"
+  },
+  "homepage": "https://github.com/ALingStudio/dsh-cookie-sweep#readme",
+  "bugs": {
+    "url": "https://github.com/ALingStudio/dsh-cookie-sweep/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "cookie",
+    "electron"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-settings"]
+    }
+  }
+}

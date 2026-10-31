@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Cookie 清理",
+    "description": "每次启动自动清理 DSH 桌面端残留的登录 cookie 数据库，避免 cookie 越攒越多撑破 16KB 请求头上限、被 431 退回，让 Web 界面打不开。"
+  }
+}

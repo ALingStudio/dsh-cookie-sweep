@@ -1,0 +1,6 @@
+- insert:
+    - id: cookie-sweep
+      name: 'dsh-cookie-sweep'
+      config:
+        enabled: true
+        onStartup: true
